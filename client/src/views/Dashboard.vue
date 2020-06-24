@@ -52,7 +52,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. -->
           <footer class="card-footer">
             <a v-on:click="toggleModal('edit', link, i)" href="#" class="card-footer-item">Edit</a>
             <a v-on:click="deleteLink(link.id, i)" href="#" class="card-footer-item">Delete</a>
-            <a target="_blank" :href="apiUrl + '/' + link.id" class="card-footer-item">Try it</a>
+            <a target="_blank" :href="baseLinksUrl + '/' + link.id" class="card-footer-item">Try it</a>
           </footer>
         </div>
       </div>
@@ -103,6 +103,7 @@ export default {
   data(){
     return {
       apiUrl: process.env.VUE_APP_API_ROOT,
+      baseLinksUrl: process.env.VUE_APP_LINKS_ROOT,
       modalIsActive: false,
       model:{
         id: "",

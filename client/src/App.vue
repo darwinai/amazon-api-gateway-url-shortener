@@ -51,7 +51,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. -->
           <h1 class="title">Welcome to {{appName}}</h1>
           <h2 class="subtitle">The NEWEST URL shortener on the block.</h2>
           <p v-if="linkNotFound">
-            We're sorry, that link could not be found. <a v-bind:href="signUpUrl" >Sign up</a> or <a v-bind:href="logInUrl" >Log in</a> to register it?
+            We're sorry, that link could not be found. <a v-bind:href="logInUrl" >Log in</a>
           </p>
         </div>
       </div>
